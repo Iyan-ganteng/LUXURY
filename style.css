@@ -5,7 +5,16 @@ body {
     background-color: aliceblue;
     box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+.container {
+  width: 100%;
+  max-width: 1200px; /* biar di laptop tetap bagus */
+  margin: auto;
+}
 header {
     background: #03009e;
     color: #fff;
@@ -32,10 +41,10 @@ header {
     font-weight: bold;
 }
 
-.container {
+/* .container {
     display: flex;
     min-height: 80vh;
-}
+} */
 
 .sidebar {
     background: #f4f4f4;
@@ -83,4 +92,10 @@ footer {
     transform: scale(1.1);
     background: #4caf50;
     color: #fff;
+
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* dari horizontal jadi vertikal di HP */
+  }
 }
