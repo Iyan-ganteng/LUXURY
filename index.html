@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury 888</title>
+   <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <img src="images/header 2.jpg" alt="Header-Photo" style="width: 100%; height: auto; display: block; ">
+<header style="
+    background: linear-gradient(100deg, #03009e 60%, #1e2a78 100%);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 26px 0;
+    min-height: 110px;
+    border-radius: 0 0 32px 32px;
+    position: relative;
+    overflow: hidden;
+">
+    <div style="position:absolute; top:-40px; right:-60px; width:180px; height:180px; background:rgba(255,214,0,0.08); border-radius:50%; z-index:0;"></div>
+    <div style="width:100%; display:flex; align-items:center; justify-content:space-between; padding:0 36px; margin-bottom:0; position:relative; z-index:1;">
+        <button id="toggleSidebar" style="background:#03009e; border:none; border-radius:8px; padding:12px 14px; cursor:pointer; margin-right:24px; display:flex; flex-direction:column; justify-content:center; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.10); transition:.2s;">
+            <span style="display:block; width:32px; height:5px; background:#ffd600; margin:4px 0; border-radius:3px; transition:.2s;"></span>
+            <span style="display:block; width:32px; height:5px; background:#ffd600; margin:4px 0; border-radius:3px; transition:.2s;"></span>
+            <span style="display:block; width:32px; height:5px; background:#ffd600; margin:4px 0; border-radius:3px; transition:.2s;"></span>
+        </button>
+        
+        <h1 style="
+            flex:1;
+            text-align:center;
+            margin:0;
+            color:#ffd600;
+            font-family:'Segoe UI',Arial,sans-serif;
+            font-size:2.5rem;
+            letter-spacing:2.5px;
+            text-shadow:0 4px 16px rgba(0,0,0,0.13);
+            font-weight:900;
+            text-transform:uppercase;
+            line-height:1.1;
+        ">
+            Welcome to XII TKJ
+        </h1>
+        <div style="width:52px;"></div>
+    </div>
+    <nav style="width:100%; display:flex; justify-content:center; margin-top:16px; position:relative; z-index:1;">
+        <ul class="navbar" style="display:flex; gap:18px; margin:0; list-style:none;">
+            <li>
+                <button class="animButton" data-halaman="index.html"
+                    style="background:rgba(255,255,255,0.07); color:#fff; border:none; font-size:1.08rem; padding:10px 24px; border-radius:8px; transition:.2s; cursor:pointer; font-weight:500;">
+                    Home
+                </button>
+            </li>
+            <li>
+                <button class="animButton" data-halaman="jadwal pelajaran.html"
+                    style="background:rgba(255,255,255,0.07); color:#fff; border:none; font-size:1.08rem; padding:10px 24px; border-radius:8px; transition:.2s; cursor:pointer; font-weight:500;">
+                    Jadwal Pelajaran
+                </button>
+            </li>
+            <li>
+                <button class="animButton" data-halaman="jadwal piket.html"
+                    style="background:rgba(255,255,255,0.07); color:#fff; border:none; font-size:1.08rem; padding:10px 24px; border-radius:8px; transition:.2s; cursor:pointer; font-weight:500;">
+                    Jadwal Piket
+                </button>
+            </li>
+            <li>
+                <button class="animButton" data-halaman="guru.html"
+                    style="background:rgba(255,255,255,0.07); color:#fff; border:none; font-size:1.08rem; padding:10px 24px; border-radius:8px; transition:.2s; cursor:pointer; font-weight:500;">
+                    Guru
+                </button>
+            </li>
+            <li>
+                <button class="animButton" data-halaman="about_us.html"
+                    style="background:rgba(255,255,255,0.07); color:#fff; border:none; font-size:1.08rem; padding:10px 24px; border-radius:8px; transition:.2s; cursor:pointer; font-weight:500;">
+                    About Us
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+    
+<!-- <aside class="sidebar" id="sidebarCategories"
+    style="
+        border-radius: 20px;
+        padding: 24px 20px;
+        background: linear-gradient(120deg,#fffbe7 60%,#ffd600 100%);
+        position:absolute;
+        top:40px;
+        left:32px;
+        height:auto;
+        min-width:240px;
+        box-shadow:0 6px 24px rgba(30,42,120,0.13);
+        transform:translateX(-110%);
+        transition:transform .3s;
+        z-index:1000;
+        border: 2px solid #ffd600;
+    ">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+        <span style="display:inline-block; width:32px; height:32px; background:#03009e; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+            <svg width="20" height="20" fill="#ffd600" viewBox="0 0 24 24" style="margin:auto;">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 17.93V20h-2v-.07A8.001 8.001 0 0 1 4.07 13H4v-2h.07A8.001 8.001 0 0 1 11 4.07V4h2v.07A8.001 8.001 0 0 1 19.93 11H20v2h-.07A8.001 8.001 0 0 1 13 19.93z"/>
+            </svg>
+        </span>
+        <h2 style="background: none; color: #03009e; font-size:1.3rem; font-weight:800; letter-spacing:1px; margin:0;">Categories</h2>
+    </div>
+    <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin-bottom:12px;">
+            <a href="#" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Mata Pelajaran
+            </a>
+        </li>
+        <li style="margin-bottom:12px;">
+            <a href="profil_walas.html" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Profil Walas
+            </a>
+        </li>
+        <li style="margin-bottom:12px;">
+            <a href="#" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Profil Siswa
+            </a>
+        </li>
+        <li>
+            <a href="NAMA ANGGOTA.HTML" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Nama kelompok
+            </a>
+        </li>
+    </ul>
+</aside> -->
+     <main>
+        <aside class="sidebar" id="sidebarCategories"
+    style="
+        border-radius: 20px;
+        padding: 24px 20px;
+        background: linear-gradient(120deg,#fffbe7 60%,#ffd600 100%);
+        position:absolute;
+        top:280px;
+        left:32px;
+        height:auto;
+        min-width:240px;
+        box-shadow:0 6px 24px rgba(30,42,120,0.13);
+        transform:translateX(-110%);
+        transition:transform .3s;
+        z-index:1000;
+        border: 2px solid #ffd600;
+    ">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:18px;">
+        <span style="display:inline-block; width:32px; height:32px; background:#03009e; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+            <svg width="20" height="20" fill="#ffd600" viewBox="0 0 24 24" style="margin:auto;">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 17.93V20h-2v-.07A8.001 8.001 0 0 1 4.07 13H4v-2h.07A8.001 8.001 0 0 1 11 4.07V4h2v.07A8.001 8.001 0 0 1 19.93 11H20v2h-.07A8.001 8.001 0 0 1 13 19.93z"/>
+            </svg>
+        </span>
+        <h2 style="background: none; color: #03009e; font-size:1.3rem; font-weight:800; letter-spacing:1px; margin:0;">Categories</h2>
+    </div>
+    <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin-bottom:12px;">
+            <a href="#" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Mata Pelajaran
+            </a>
+        </li>
+        <li style="margin-bottom:12px;">
+            <a href="profil_walas.html" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Profil Walas
+            </a>
+        </li>
+        <li style="margin-bottom:12px;">
+            <a href="#" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Profil Siswa
+            </a>
+        </li>
+        <li>
+            <a href="NAMA ANGGOTA.HTML" style="display:flex; align-items:center; gap:8px; color:#03009e; text-decoration:none; font-size:1.08em; font-weight:600; border-radius:8px; padding:8px 12px; transition:.2s; background:rgba(3,0,158,0.06);">
+                <span style="display:inline-block; width:8px; height:8px; background:#ffd600; border-radius:50%;"></span>
+                Nama kelompok
+            </a>
+        </li>
+    </ul>
+</aside>
+    <section style="max-width:800px; margin:48px auto 32px auto; padding:32px 28px; background:linear-gradient(120deg,#fffbe7 60%,#ffd600 100%); border-radius:28px; box-shadow:0 6px 24px rgba(30,42,120,0.13);">
+        <h2 style="text-align:center; color:#03009e; font-size:2rem; font-family:'Segoe UI',Arial,sans-serif; letter-spacing:1.5px; font-weight:900; margin-bottom:24px; text-shadow:0 2px 12px rgba(30,42,120,0.08);">
+            Pengertian Loss
+        </h2>
+        <p style="font-size:1.15rem; color:#222; line-height:1.7; margin-bottom:18px; text-align:justify;">
+            <strong>Loss</strong> (kerugian) atau yang secara teknis sering disebut <strong>attenuasi</strong> pada serat optik adalah fenomena di mana intensitas atau daya sinyal cahaya yang merambat di dalam serat menurun secara bertahap seiring bertambahnya jarak dari titik pengirim (transmitter) ke penerima (receiver). Kerugian ini umumnya diukur dalam satuan <strong>desibel per kilometer (dB/km)</strong>, yang menunjukkan seberapa banyak daya sinyal berkurang untuk setiap kilometer serat yang dilewati.
+        </p>
+        <div style="background:#03009e0d; border-left:6px solid #03009e; border-radius:12px; padding:18px 22px; margin-bottom:18px;">
+            <span style="font-size:1.08rem; color:#03009e; font-weight:600;">
+                Pentingnya kerugian ini tidak bisa diremehkan. Jika sinyal cahaya terlalu lemah saat mencapai ujung penerima, maka data yang dikirim bisa mengalami gangguan, atau bahkan hilang sama sekali.
+            </span>
+        </div>
+        <ul style="font-size:1.08rem; color:#222; margin-left:18px; margin-bottom:0;">
+            <li style="margin-bottom:8px;">Penurunan kualitas layanan, misalnya buffering saat streaming atau panggilan video terputus-putus.</li>
+            <li style="margin-bottom:8px;">Kegagalan komunikasi total jika sinyal terlalu lemah.</li>
+            <li style="margin-bottom:8px;">Kerugian harus diminimalkan agar transmisi data tetap stabil dan efisien.</li>
+        </ul>
+    </section>
+</main>
+    </div>
+  <footer style="background:linear-gradient(90deg,#03009e 60%,#1e2a78 100%); color:#fff; padding:0; margin-top:48px; box-shadow:0 -2px 16px rgba(0,0,0,0.08); font-family:'Segoe UI',Arial,sans-serif; border-radius:18px 18px 0 0; overflow:hidden;">
+    <div style="max-width:1100px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:stretch; gap:32px; padding:48px 32px 24px 32px;">
+        <div style="flex:1 1 320px; min-width:220px; display:flex; flex-direction:column; justify-content:center;">
+            <h3 style="margin:0 0 12px 0; color:#ffd600; letter-spacing:1px; font-size:1.4em;">Tentang Kami</h3>
+            <p style="margin:0; color:#e0e0e0; line-height:1.7;">
+                Teknik Komputer dan Jaringan SMK Yapia Parung<br>
+                <span style="font-style:italic; color:#ffd600;">Never Give Up</span>
+            </p>
+        </div>
+        <div style="flex:1 1 320px; min-width:220px; display:flex; flex-direction:column; justify-content:center;">
+            <h3 style="margin:0 0 12px 0; color:#ffd600; letter-spacing:1px; font-size:1.4em;">Kontak</h3>
+            <ul style="list-style:none; padding:0; margin:0; line-height:2;">
+                <li style="margin-bottom:8px;">
+                    <a href="mailto:ardhiansaputra717@gmail.com" style="color:#ffd600; text-decoration:none; display:flex; align-items:center; gap:10px; font-size:1.08em;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" style="width:22px; height:22px; filter:invert(1);"> ardhiansaputra717@gmail.com
+                    </a>
+                </li>
+                <li style="margin-bottom:8px;">
+                    <a href="https://instagram.com/ardhian_0011" target="_blank" style="color:#ffd600; text-decoration:none; display:flex; align-items:center; gap:10px; font-size:1.08em;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:22px; height:22px; filter:invert(1);"> @ardhian_0011
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/628826859747" target="_blank" style="color:#ffd600; text-decoration:none; display:flex; align-items:center; gap:10px; font-size:1.08em;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:22px; height:22px; filter:invert(1);"> WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="flex:1 1 220px; min-width:180px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+            <img src="images/Gambar WhatsApp 2025-08-25 pukul 20.58.49_d8e564fa.jpg" alt="Logo" style="width:80px; height:80px; object-fit:cover; border-radius:50%; box-shadow:0 2px 12px rgba(0,0,0,0.15); margin-bottom:12px;">
+            <div style="color:#ffd600; font-weight:bold; font-size:1.1em; letter-spacing:1px;">ARDHIAN SAPUTRA</div>
+        </div>
+    </div>
+    <div style="background:#222a5e; text-align:center; color:#bbb; padding:18px 0 12px 0; font-size:15px; letter-spacing:1px; border-top:1px solid #223;">
+        &copy; 2025 Ardhian. All rights reserved.
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
